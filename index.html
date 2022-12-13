@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ash Aura</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id = "controls">
+            <div class = "colors">
+                <div>
+                    <label for="blob1color">Blob 1 Color</label>
+                        <input
+                            id="blob1color"
+                            type="color"
+                            value="#a02342"
+                        />
+                </div>
+                <div>
+                    <label for="blob2color">Blob 2 Color</label>
+                        <input
+                            id="blob2color"
+                            type="color"
+                            value="#ffb0b0"
+                        />
+                </div>
+                <div>
+                    <label for="blob3color">Blob 3 Color</label>
+                        <input
+                            id="blob3color"
+                            type="color"
+                            value="#00b0b0"
+                        />
+                </div>
+            </div>
+            <br>
+            <div class = "blur">
+                <label for="gaussianblur">Gaussian Blur:</label>
+                        <input
+                            type = "range"
+                            id = "gaussianblur"
+                            min="0"
+                            max="100"
+                            value="20"
+                        />
+            </div>
+            <br>
+            <div class = "alpha">
+                <label for = "alpha">Alpha</label>
+                <input 
+                    type = "number"
+                    id = "alpha"
+                    min = "0"
+                    max = "1"
+                    step = "0.01"
+                    value = "1"
+                />
+            </div>
+            <br>
+            <div class="artwork text">
+                <label for="title-text-input">Aura Name:</label>
+                <textarea id="title-text-input" rows="1" value="">Ash Aura</textarea><br />
+                <a href="#" id="clear1">✕</a>
+            </div>
+            <button onclick="applyStyles()">Apply Styles</button>
+            <br>
+            <button onclick="randomizePositions()">Randomize Positions</button>
+        </div>
+        <div id="canvas">
+            <div id="canvas--artwork">
+                <div id="blob1" class="blob"></div>
+                <div id="blob2" class="blob"></div>
+                <div id="blob3" class="blob"></div>
+            </div>
+            <div id="canvas--small-text">
+                <div id="title-text">Ash Aura</div>
+                <div id="name-text">Mio Akasako</div>
+                <div id="color-text">#000000</div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
