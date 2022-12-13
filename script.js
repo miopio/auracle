@@ -19,19 +19,13 @@
   ];  
   
   function applyStyles() {
-    const gaussianBlur = document.getElementById('gaussianblur').value;
-    const alpha = document.getElementById('alpha').value;
-
     // Apply the colors and styles to the blob elements
-
     var i = 1;
     for(selector of selectors){
       var selVal = document.getElementById(selector[0]).selectedOptions;
       if(selVal.length > 0){
         colorVal = colorsFromValues.filter(col => col[0] == selVal[0].value);
         document.getElementById('blob'+i).style.backgroundColor = colorVal[0][1];
-        document.getElementById('blob'+i).style.filter = `blur(${gaussianBlur}px)`;
-        document.getElementById('blob'+i).style.opacity = alpha;
       }
       i = i + 1;
     }
@@ -49,7 +43,7 @@
   };
   
 
-  function randomizePositions() {
+  function randomize() {
     // Get the dimensions of the canvas
     const canvasHeight = document.getElementById('canvas--artwork').offsetHeight;
     const canvasWidth = document.getElementById('canvas--artwork').offsetWidth;
@@ -65,11 +59,15 @@
       const blobRadius = (100 + Math.random()*200) + "px";
       theBlob.style.width = blobRadius;
       theBlob.style.height = blobRadius;
+
+      theBlob.style.opacity = 0.5+Math.random()*0.5;
+      var gaussianBlur = 20 + Math.random()*80;
+      theBlob.style.filter = `blur(${gaussianBlur}px)`;
     }
   }
 
   window.onload = () => {
-    randomizePositions();
+    randomize();
     populateSelectors();
     applyStyles();
   }
