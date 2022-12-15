@@ -10,42 +10,40 @@
     </head>
     <body>
         <div id = "controls">
-            
-            <label for="value-1">Pick your first Ash value:</label>
-                <select name="choice" id = "value-1">
-                    <!-- <option value="" disabled selected>Please select an Ash value</option> -->
-                </select>
+            <div class="artwork-text">
+            <label for="value-1">Ash value that speaks to you:</label>
+                <br>
+                <select name="choice" id = "value-1"></select>
+            </div>
             <br>
+            <div class="artwork-text">
             <label for="value-2">Pick your second Ash value:</label>
-            <select name="choice" id = "value-2">
-                <!-- <option value="" disabled selected>Please select an Ash value</option> -->
-            </select>
+                <br>
+                <select name="choice" id = "value-2"></select>
+            </div>
             <br>
+            <div class="artwork-text">
             <label for="value-3">Pick your third Ash value:</label>
-            <select name="choice" id = "value-3">
-                <!-- <option value="" disabled selected>Please select an Ash value</option> -->
-            </select>
+                <br>
+                <select name="choice" id = "value-3"></select>
+            </div>
             <br>
-            <div class="artwork text">
-                <label for="title-text-input">Aura Name:</label>
+            <div class="artwork-text">
+                <label for="title-text-input">Your Aura Name🌈</label>
+                <br>
                 <textarea id="title-text-input" rows="1" value="">Ash Aura</textarea><br />
-                <a href="#" id="clear1">✕</a>
             </div>
-            <div class="artwork text" style = "margin-top: 10px">
-                <label for="name-text-input">Your name</label>
-                <textarea id="name-text-input" rows="1" value="">Mio Akasako</textarea><br />
-                <a href="#" id="clear2">✕</a>
+            <div class="artwork-text" style = "margin-top: 10px">
+                <label for="name-text-input">Your name😎</label>
+                <br>
+                <textarea id="name-text-input" rows="1" value="">Your name here</textarea><br />
             </div>
-            <div class="artwork text" style = "margin-top: 10px">
-                <label for="color-text-input">Color Hex Codes</label>
-                <textarea id="color-text-input" rows="1" value="">Color Hex Codes</textarea><br />
-                <a href="#" id="clear3">✕</a>
-            </div>
-            <button onclick="randomize()">Randomize</button>
+            <button id = "magic-button" onclick="randomize()">AURA MAGIC✨</button>
             <br>
-            <label>Image File:</label><br/>
+            <!-- <div class = "artwork-text"></div>
+            <label>Upload a headshot</label><br/>
             <input type="file" id="imageLoader" name="imageLoader"/>
-            <canvas id="imageCanvas"></canvas>
+            </div> -->
         </div>
         <div id="canvas">
             <div id="canvas--artwork">
@@ -54,9 +52,10 @@
                 <div id="blob3" class="blob"></div>
             </div>
             <div id="canvas--small-text">
-                <div id="title-text">Ash Aura</div>
-                <div id="name-text">Mio Akasako</div>
-                <div id="color-text">#000000</div>
+                <div id="title-text"></div>
+                <div id="emptyspace"></div>
+                <div id="name-text"></div>
+                <div id="color-text"></div>
             </div>
         </div>
         <script src="script.js" async defer></script>
