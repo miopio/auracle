@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gilroy Semi-Bold";
-  src: url("/fonts/Gilroy-SemiBold.ttf") format("ttf");
+  src: url("../../auracle/fonts/Gilroy-SemiBold.ttf") format("ttf");
 }
 
 body {
