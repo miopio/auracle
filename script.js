@@ -1,15 +1,15 @@
   const colorsFromValues = [ 
-    ["Empowerment", "#0269E1"] //ash electric blue
-  , ["Pride", "#0A2342"] //ash dark blue
-  , ["Responsibility", "#6F34EE"] //purple
+    ["Determination", "#0269E1"] //ash electric blue
+  , ["Competency", "#0A2342"] //ash dark blue
+  , ["Inclusion", "#6F34EE"] //purple
   , ["Innovative", "#F68FFF"] //pink
-  , ["Determination", "#FF6B6B"] //red
-  , ["Community", "#FFBB0D"] //orange-yellow
-  , ["Kindness", "#FFE380"] //yellow
-  , ["Openness","#0DFF8B"] //green
-  , ["Integrity", "#66EDFF"] //aqua
-  , ["Trustworthy", "#B1E3FF"] //light blue
-  , ["Compassion", "#D4DAFB"] //lavender
+  , ["Authority", "#FF6B6B"] //red
+  , ["Empowerment", "#FFBB0D"] //orange-yellow
+  , ["Community", "#FFE380"] //yellow
+  , ["VOIBES","#0DFF8B"] //green
+  , ["Optimism", "#66EDFF"] //aqua
+  , ["Kindness", "#B1E3FF"] //light blue
+  , ["Approachable", "#D4DAFB"] //lavender
   ];
 
   const selectors = 
