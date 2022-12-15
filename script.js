@@ -1,15 +1,15 @@
   const colorsFromValues = [ 
     ["Empowerment", "#0269E1"] //ash electric blue
   , ["Pride", "#0A2342"] //ash dark blue
-  , ["Prejudice", "#6F34EE"] //purple
-  , ["sdf", "#F68FFF"] //pink
-  , ["sdfsdfsdf", "#FF6B6B"] //red
-  , ["1123123", "#FFBB0D"] //orange-yellow
-  , ["sdxf", "#FFE380"] //yellow
-  , ["2342sd","#0DFF8B"] //green
-  , ["ppp", "#66EDFF"] //aqua
-  , ["xcvx", "#B1E3FF"] //light blue
-  , ["2349", "#D4DAFB"] //lavender
+  , ["Responsibility", "#6F34EE"] //purple
+  , ["Innovative", "#F68FFF"] //pink
+  , ["Determination", "#FF6B6B"] //red
+  , ["Community", "#FFBB0D"] //orange-yellow
+  , ["Kindness", "#FFE380"] //yellow
+  , ["Openness","#0DFF8B"] //green
+  , ["Integrity", "#66EDFF"] //aqua
+  , ["Trustworthy", "#B1E3FF"] //light blue
+  , ["Compassion", "#D4DAFB"] //lavender
   ];
 
   const selectors = 
@@ -54,14 +54,14 @@
       // Set the positions of the blob elements to random coordinates
       const theBlob = document.getElementById(blob);
       theBlob.style.top = Math.random()*canvasHeight - canvasHeight/5+ "px";
-      theBlob.style.left = Math.random()*canvasWidth + "px";
+      theBlob.style.left = Math.random()*canvasWidth/2 + "px";
       // set radius
-      const blobRadius = (150 + Math.random()*300) + "px";
+      const blobRadius = (220 + Math.random()*300) + "px";
       theBlob.style.width = blobRadius;
       theBlob.style.height = blobRadius;
 
       //theBlob.style.opacity = 0.7+Math.random()*0.5;
-      var gaussianBlur = 20 + Math.random()*60;
+      var gaussianBlur = 40 + Math.random()*60;
       theBlob.style.filter = `blur(${gaussianBlur}px)`;
     }
   }
