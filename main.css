@@ -117,16 +117,19 @@ body {
   #blob1 {
     top: 50px;
     left: 50px;
+    position: absolute;
   }
 
   #blob2 {
     top: 100px;
     left: 100px;
+    position: absolute;
   }
 
   #blob3 {
     top: 10px;
     left: 10px;
+    position: absolute;
   }
 
   #title-text{

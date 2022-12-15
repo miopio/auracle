@@ -53,15 +53,15 @@
     for(blob of blobs){
       // Set the positions of the blob elements to random coordinates
       const theBlob = document.getElementById(blob);
-      theBlob.style.top = Math.random()*canvasHeight/20 + "px";
-      theBlob.style.left = Math.random()*canvasWidth/2 + "px";
+      theBlob.style.top = Math.random()*canvasHeight - canvasHeight/5+ "px";
+      theBlob.style.left = Math.random()*canvasWidth + "px";
       // set radius
-      const blobRadius = (150 + Math.random()*200) + "px";
+      const blobRadius = (150 + Math.random()*300) + "px";
       theBlob.style.width = blobRadius;
       theBlob.style.height = blobRadius;
 
       //theBlob.style.opacity = 0.7+Math.random()*0.5;
-      var gaussianBlur = 10 + Math.random()*80;
+      var gaussianBlur = 20 + Math.random()*60;
       theBlob.style.filter = `blur(${gaussianBlur}px)`;
     }
   }
