@@ -24,7 +24,7 @@ body {
   }
 
   #canvas--small-text {
-    padding: 1vw;
+    /*padding: 1vw;*/
     background-color: white;
     height: 35%;
     position: fixed;
@@ -127,7 +127,6 @@ body {
     left: 50px;
     position: absolute;
     transition-duration: 2s;
-    -webkit-transitiongit-duration: 2s;
   }
 
   #blob2 {
@@ -135,7 +134,6 @@ body {
     left: 100px;
     position: absolute;
     transition-duration: 2s;
-    -webkit-transition-duration: 2s;
   }
 
   #blob3 {
@@ -143,7 +141,6 @@ body {
     left: 10px;
     position: absolute;
     transition-duration: 2s;
-    -webkit-transition-duration: 2s;
   }
 
   #title-text{
@@ -153,6 +150,9 @@ body {
     overflow: hidden;
     /*height:130px;*/
     height: 15vh;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #name-text{
@@ -161,6 +161,8 @@ body {
     text-transform: uppercase;
     /*height:50px;*/
     height: 5vh;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #emptyspace{
@@ -175,8 +177,9 @@ body {
     line-height: 1.0;
     text-transform: uppercase;
     overflow: hidden;
-
-  }
+    padding-left: 10px;
+    padding-right: 10px;
+    }
 
   input[type="text"],
   textarea {
