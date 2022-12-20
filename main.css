@@ -149,7 +149,7 @@ body {
     line-height: 1.0;
     overflow: hidden;
     /*height:130px;*/
-    height: 15vh;
+    height: 16vh;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -163,13 +163,14 @@ body {
     height: 5vh;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
   }
 
   #emptyspace{
     font-size: 2rem;
     overflow: hidden;
     /*height:30px;*/
-    height: 6vh;
+    height: 5vh;
   }
 
   #color-text{
@@ -179,6 +180,7 @@ body {
     overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     }
 
   input[type="text"],
